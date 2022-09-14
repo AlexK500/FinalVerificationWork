@@ -10,3 +10,13 @@
 
 // создание нового массива из строк 
 string[] arrString = { "1234", "1567", "как", "computer science", "то", "так", "forpost" };
+// считаем сколько элементов в массиве, длина которых меньше, либо равна 3 символам. 
+int cnt = 0;
+for (int i = 0; i < arrString.Length; i++)
+{
+    if (arrString[i].Length <= 3)
+    {
+        cnt++;
+
+    }
+}
