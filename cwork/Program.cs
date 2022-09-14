@@ -32,3 +32,10 @@ for (int i = 0; i < arrString.Length; i++)
         tmp++;
     }
 }
+// Выводим результат
+Console.WriteLine("Исходный массив");
+Console.Write(String.Join(", ", arrString));
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine("Новый массив, где длина элементов строк меньше, либо равна 3 символам:");
+Console.Write(String.Join(", ", newArr));
