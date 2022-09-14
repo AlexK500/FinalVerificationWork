@@ -8,3 +8,5 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
+// создание нового массива из строк 
+string[] arrString = { "1234", "1567", "как", "computer science", "то", "так", "forpost" };
