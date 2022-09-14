@@ -10,32 +10,38 @@
 
 // создание нового массива из строк 
 string[] arrString = { "1234", "1567", "как", "computer science", "то", "так", "forpost" };
+int i = 0;
 // считаем сколько элементов в массиве, длина которых меньше, либо равна 3 символам. 
 int cnt = 0;
-for (int i = 0; i < arrString.Length; i++)
+string[] Array(string[] arr)
 {
-    if (arrString[i].Length <= 3)
+    for (i = 0; i < arr.Length; i++)
     {
-        cnt++;
+        if (arr[i].Length <= 3)
+        {
+            cnt++;
 
+        }
     }
-}
-// объявляем новый массив с уже известной длиной
-string[] newArr = new string[cnt];
-int tmp = 0;
-// наполняем массив строковыми элементами, где длина которых меньше, либо равна 3 симыолам
-for (int i = 0; i < arrString.Length; i++)
-{
-    if (arrString[i].Length <= 3)
+    // объявляем новый массив с уже известной длиной
+    string[] newArr = new string[cnt];
+    int tmp = 0;
+    // наполняем массив строковыми элементами, где длина которых меньше, либо равна 3 симыолам
+    for (i = 0; i < arr.Length; i++)
     {
-        newArr[tmp] = arrString[i];
-        tmp++;
+        if (arr[i].Length <= 3)
+        {
+            newArr[tmp] = arr[i];
+            tmp++;
+        }
     }
+    return newArr;
 }
+
 // Выводим результат
 Console.WriteLine("Исходный массив");
 Console.Write(String.Join(", ", arrString));
 Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine("Новый массив, где длина элементов строк меньше, либо равна 3 символам:");
-Console.Write(String.Join(", ", newArr));
+Console.Write(String.Join(", ", Array(arrString)));
