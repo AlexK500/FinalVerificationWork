@@ -20,3 +20,6 @@ for (int i = 0; i < arrString.Length; i++)
 
     }
 }
+// объявляем новый массив с уже известной длиной
+string[] newArr = new string[cnt];
+int tmp = 0;
