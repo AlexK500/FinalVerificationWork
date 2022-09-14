@@ -9,7 +9,7 @@
 // [“Russia”, “Denmark”, “Kazan”] → []
 
 // создание нового массива из строк 
-string[] arrString = { "1234", "1567", "как", "computer science", "то", "так", "forpost" };
+string[] arrString = { "Hello", "2", "world", ":-)" };
 int i = 0;
 // считаем сколько элементов в массиве, длина которых меньше, либо равна 3 символам. 
 int cnt = 0;
@@ -39,9 +39,7 @@ string[] Array(string[] arr)
 }
 
 // Выводим результат
-Console.WriteLine("Исходный массив");
-Console.Write(String.Join(", ", arrString));
 Console.WriteLine();
+Console.Write("["+String.Join(", ", arrString)+"] ");
+Console.WriteLine(" -> ["+String.Join(", ", Array(arrString))+"]");
 Console.WriteLine();
-Console.WriteLine("Новый массив, где длина элементов строк меньше, либо равна 3 символам:");
-Console.Write(String.Join(", ", Array(arrString)));
