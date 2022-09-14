@@ -23,3 +23,12 @@ for (int i = 0; i < arrString.Length; i++)
 // объявляем новый массив с уже известной длиной
 string[] newArr = new string[cnt];
 int tmp = 0;
+// наполняем массив строковыми элементами, где длина которых меньше, либо равна 3 симыолам
+for (int i = 0; i < arrString.Length; i++)
+{
+    if (arrString[i].Length <= 3)
+    {
+        newArr[tmp] = arrString[i];
+        tmp++;
+    }
+}
